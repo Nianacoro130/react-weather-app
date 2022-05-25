@@ -1,0 +1,215 @@
+.meteo-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background : url('../../public/img/rain.jpg'); */
+    /* backgrounkd: cover;  */
+    z-index: -1;
+
+}
+
+button#btn-retour {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 75px 50px auto;
+    color: #ccc;
+    background-color:  rgb(21, 125, 76);
+    border: none;
+    z-index: 2;
+}
+
+button#btn-retour:hover {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    margin: 75px 50px auto;
+    color: #ccc;
+    background-color:  rgb(21, 125, 76);
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.container-gauche {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    /* background-color: aqua; */
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.card-meteo {
+    margin: 200px 0 0 0;
+    width: 50%;
+    height: 20%;
+    background-color: rgb(21, 125, 76);
+    border-radius: 20px;
+    z-index: 2;
+    color:#ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-meteo:hover {
+    width: 51%;
+    height: 21%;
+    /* transition: 0.1s; */
+}
+
+.card-meteo #date {
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+
+}
+
+.infos-meteo {
+    display: block;
+    /* background-color: red; */
+    flex-direction: column;
+    column-count: 2;
+    width: auto;
+
+}
+
+.infos-meteo p {
+    font-size: 0.8em;
+    margin: 5px;
+    padding-top: 2px;
+ 
+}
+
+
+
+.container-droite {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    /* background-color : pink; */
+    justify-content:center;
+}
+
+.next-card-meteo {
+    display: flex;
+    position: relative;
+    margin: 20px auto;
+    max-width: 50%;
+    background-color: rgb(21, 125, 76);
+    height: 10%;
+    border-radius: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.next-card-meteo:hover {
+    max-width: 55%;
+    transition: 0.2s;
+}
+
+div#next-date {
+    margin: 10px auto;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+div#degres {
+    position: absolute;
+    font-size: 2em;
+    top: 10px;
+    right: 15px;
+
+}
+
+@media only screen and (max-width: 810px) {
+
+    div#degres {
+        position: absolute;
+        font-size: 1em;
+        top: 10px;
+        right: 15px,
+        
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 710px) {
+
+    div#degres {
+        position: absolute;
+        font-size: 0.9em;
+        top: 35px;
+        right: 15px;
+
+    }
+
+
+    .infos-meteo {
+        display: flex;
+        background-color: rgb(21, 125, 76); 
+        flex-direction: column;
+        column-count: 2;
+        width: auto;
+        border-radius: 20px;
+     
+    }
+
+ 
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .infos-meteo {
+        display: flex;
+        background-color: rgb(21, 125, 76); 
+        flex-direction: column;
+        column-count: 2;
+        width: auto;
+     
+    }
+
+    .card-meteo #date {
+        margin-top: 5px;
+        font-size: 0.8em;
+        font-weight: 500;
+    
+    }
+    
+    .next-card-meteo {
+        display: flex;
+        position: relative;
+        margin: 20px auto;
+        max-width: 50%;
+        background-color: rgb(21, 125, 76);
+        height: 10%;
+        border-radius: 20px;
+        color: #ccc;
+    }
+    
+
+    
+    div#next-date {
+        margin: 10px auto;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    div#degres {
+        position: absolute;
+        font-size: 0.9em;
+        top: 35px;
+        right: 15px;
+
+    }
+
+    
+}
