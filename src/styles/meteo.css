@@ -47,7 +47,7 @@ button#btn-retour:hover {
 
 .card-meteo {
     margin: 200px 0 0 0;
-    width: 50%;
+    width: 55%;
     height: 20%;
     background-color: rgb(21, 125, 76);
     border-radius: 20px;
@@ -57,8 +57,17 @@ button#btn-retour:hover {
     cursor: pointer;
 }
 
+p#iconweather img {
+    width: 25%;
+
+
+}
+    
+
+
+
 .card-meteo:hover {
-    width: 51%;
+    width: 56%;
     height: 21%;
     /* transition: 0.1s; */
 }
@@ -67,6 +76,8 @@ button#btn-retour:hover {
     margin-top: 5px;
     font-size: 1.5em;
     font-weight: 500;
+    width: 100%;
+    /* background-color: red; */
 
 }
 
@@ -199,14 +210,14 @@ div#degres {
     
     div#next-date {
         margin: 10px auto;
-        font-size: 0.8em;
+        font-size: 0.7em;
         font-weight: 600;
     }
 
     div#degres {
         position: absolute;
         font-size: 0.9em;
-        top: 35px;
+        top: 45px;
         right: 15px;
 
     }
